@@ -1,14 +1,3 @@
-
-# Vim saves *.swp files while you are editing
-# as backups while editing files. When I commit while editing
-# I don't want to include these
-*.swp
-
-# For this project specifically I want to
-# ignore document output. In general some pdf
-# files might be used for images or figures
-main.pdf
-
 # General git ignore file for tex projects
 # -------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/TeX.gitignore
