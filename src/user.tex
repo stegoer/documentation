@@ -1,103 +1,107 @@
 %! Author = kucera-lukas
 %! Date = 4/13/22
 
-\section{Uzivatel}\label{sec:uzivatel}
+\section{Uživatel}\label{sec:uzivatel}
 
 \subsection{Registrace}\label{subsec:registrace}
-Na adrese \url{https://stegoer.netlify.app/account?form=register} (pokud neni
-uzivatel jiz prihlasen) se zobrazi stranka, pomoci ktere je mozne si zalozit
-novy uzivatelsky ucet.
+Na adrese \url{https://stegoer.netlify.app/account?form=register} (pokud není
+uživatel již přihlášen) se zobrazí stránka, pomocí které je možné si založit
+nový uživatelský účet.
 
-Nalezitosti udaju noveho uzivatelskeho uctu:
+\subsubsection{Náležitosti údajů}\label{subsubsec:naleziosti-udaju}
 
 \begin{enumerate}
-    \item Uzivatelske jmeno musi mit alespon 6 znaku.
-    \item Email musi odpovidat regulernimu vyrazu \verb/^\S+@\S+\.\S+$/.
-    \item Heslo musi mit minimalne 6 znaku, obsahovat cislo, velke pismeno, male
-    pismeno a alespon jeden specialni znak.
+    \item Uživatelské jméno musí mit alespoň 6 znaků.
+    \item Email musí odpovídat regulernímu výrazu \verb/^\S+@\S+\.\S+$/.
+    \item Heslo musí mít minimálně 6 znaků, obsahovat číslo, velké písmeno, malé
+    pismeno a alespoň jeden specialní znak.
 \end{enumerate}
 
-\subsubsection{Zadavani hesla}\label{subsubsec:zadavani-hesla}
+\subsubsection{Zadávání hesla}\label{subsubsec:zadavani-hesla}
 
-Pri vyplnovani se zobrazi popover\cite{enwiki:popover}, ktery uzivateli dava
-najevo zda jeho heslo splnuje potrebne podminky.
+Při vyplnování pole pro heslo se zobrazí popover\cite{enwiki:popover},
+který uživateli davá najevo zda jeho heslo splňuje potřebné podmínky.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.3]{assets/images/password-popover}
-    \caption{Zadavani hesla}\label{fig:zadavani-hesla}
+    \caption{Zadávaní hesla}\label{fig:zadavani-hesla}
 \end{figure}
 
-\subsection{Prihlaseni}\label{subsec:prihlaseni}
-Na adrese \url{https://stegoer.netlify.app/account?form=login} se zobrazi
-prihlasovaci stranka.
+\subsection{Přihlášení}\label{subsec:prihlaseni}
+Na adrese \url{https://stegoer.netlify.app/account?form=login} se zobrazí
+přihlašovací stránka.
 
-Zde se pomoci emailu a hesla lze se prihlasit do vlastniho uctu (pokud neni
-uzivatel jiz prihlasen).
+Zde se pomocí emailu a hesla lze se přihlásit do vlastního účtu (pokud není
+uživatel již přihlášen).
 
-U prihlaseni probiha kontrola pouze emailu, ktery by opet mel odpovidat
-regulernimu vyrazu \verb/^\S+@\S+\.\S+$/.
+U přihlaseni probíhá validace pouze emailu, který by opět měl odpovídat
+regulernímu výrazu \verb/^\S+@\S+\.\S+$/.
 
-\subsection{Sprava uctu}\label{subsec:sprava-uctu}
-Pri kazdem vstupu na adresu \url{https://stegoer.netlify.app/account} aplikace
-zkontroje stav uzivatele.
+\subsection{Správa účtu}\label{subsec:sprava-uctu}
+Při každém vstupu na adresu \url{https://stegoer.netlify.app/account} aplikace
+zkontroje stav uživatele.
 
-Pokud je uzivatel neni prihlasen aplikace ho presmeruje na prihlasovaci
-stranku\ref{subsec:prihlaseni}
+Pokud uživatel není přihlášen aplikace ho přesměruje na přihlašovací
+stránku\ref{subsec:prihlaseni}.
 
-\subsubsection{Informace o uctu}
+\subsubsection{Informace o účtu}
 
-Z jednoduche tabulky, ktere se zobrazi hned pri vstupu lze vycist tri informace:
+Z jednoduché tabulky, která se zobrazí hned při vstupu lze vyčíst tři informace:
 
 \begin{enumerate}
-    \item Posledni datum prihlaseni uzivatele
-    \item Posledni datum aktualizace uzivatele
-    \item Datum vytvoreni uzivatelskeho uctu
+    \item Poslední datum prihlasené uživatele
+    \item Poslední datum aktualizace uživatele
+    \item Datum vytvoření uživatelského účtu
 \end{enumerate}
 
-\subsubsection{Aktualizace uctu}
+\subsubsection{Aktualizace účtu}
 
-Prave tlacitko \texttt{Update account }otevre dialog pomoci ktereho muze
-uzivatel zaktualizovat svuj ucet.
+Pravé tlačítko \texttt{Update account} otevře dialog pomocí kterého může
+uživatel zaktualizovat svůj účet.
 
-\paragraph{Zmena jmena a emailu}
+\paragraph{Změna jména a emailu}
 
-Nabizi se zmena uzivatelskeho jmena, emailu a i hesla.
-Samozrejme musi byt splneny stejne podminky jako pri registraci\ref{subsec:registrace}.
+Nabízí se změna uživatelského jména, emailu a i hesla.
+Samozřejmě musí být splněny stejné podmínky jako při
+registraci\ref{subsec:registrace}.
 
-\paragraph{Zmena hesla}
+\paragraph{Změna hesla}
 
-Nabizi se zmena uzivatelskeho jmena, emailu a i hesla.
-Samozrejme musi byt splneny stejne podminky jako pri registraci\ref{subsec:registrace}.
+Nabízí se změna uživatelského jména, emailu a i hesla.
+Samozrejmě musí byt splněny stejné podmínky jako při
+registraci\ref{subsec:registrace}.
 
-\subsubsection{Odhlaseni}
+\subsubsection{Odhlášení}
 
-Po stisknuti leveho tlacitka \texttt{Logout} se uzivatel z jeho uctu odhlasi.
+Po stisknutí levého tlačítka \texttt{Logout} se uživatel má možnost ze svého
+účtu ohlásit.
 
-\subsection{Tabulka obrazku}\label{subsec:tabulka-obrazku}
-Na adrese \url{https://stegoer.netlify.app/images} nalezneme tabulku, pomoci
-ktere muze uzivatel prochazet obrazky, do kterych v minulosti ulozil nejaka
+\subsection{Tabulka obrázku}\label{subsec:tabulka-obrazku}
+Na adrese \url{https://stegoer.netlify.app/images} nalezneme tabulku, pomocí
+které může uživatel procházet obrázky, do kterých v minulosti uložil nějaká
 data.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{assets/images/images-table}
-    \caption{Tabulka s obrazky}\label{fig:tabulka-obrazky}
+    \caption{Tabulka s obrázky}\label{fig:tabulka-obrazky}
 \end{figure}
 
-\subsubsection{Strankovani}\label{subsubsec:strankovani}
-Na jedne strane se zobrazi maximalne 10 radku, pro zobrazeni ostatnich je treba
-pouzit navigacni tlacitka pod tabulkou.
-Kazdy radek tabulky reprezentuje jeden obrazek a lze z neho vycist jeho ID a
-datum vytvoreni.
+\subsubsection{Stránkovani}\label{subsubsec:strankovani}
+Na jedné straně se zobrazí maximálně 10 řádku, pro zobrazení ostatních je třeba
+použít navigační tlačítka pod tabulkou.
+
+Každý řádek tabulky reprezentuje jeden obrázek a lze z něho vyčíst jeho ID a
+datum vytvoření.
 
 \subsubsection{Detail obrazku}\label{subsubsec:detail-obrazku}
-Tlacitko \texttt{view}, ktere se nachazi na kazdem radku slouzi k otevreni
-detailni informace o souboru a moznost si obrazek opet znovu stahnout
-(pokud tak uzivatel naucinil po zakodovani dat).
+Tlačitko \texttt{view}, které se nachází na každém řádku slouží k otevřeni
+detailní informace o souboru a možnost si soubor opět znovu stáhnout
+(pokud tak uživatel například neučinil po zakódováni dat).
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{assets/images/image-detail}
-    \caption{Detailn obrazku}\label{fig:detail-obrazku}
+    \caption{Detail obrázku}\label{fig:detail-obrazku}
 \end{figure}
