@@ -42,8 +42,12 @@ regulernimu vyrazu \verb/^\S+@\S+\.\S+$/.
 Pri kazdem vstupu na adresu \url{https://stegoer.netlify.app/account} aplikace
 zkontroje stav uzivatele.
 
-Pokud je uzivatel prihlasen zobrazi se jednoducha tabulka ze ktere jdou vycist
-tri informace:
+Pokud je uzivatel neni prihlasen aplikace ho presmeruje na prihlasovaci
+stranku\ref{subsec:prihlaseni}
+
+\subsubsection{Informace o uctu}
+
+Z jednoduche tabulky, ktere se zobrazi hned pri vstupu lze vycist tri informace:
 
 \begin{enumerate}
     \item Posledni datum prihlaseni uzivatele
@@ -51,27 +55,29 @@ tri informace:
     \item Datum vytvoreni uzivatelskeho uctu
 \end{enumerate}
 
-Pod temito informacemi uzivatel nalezne dve tlacitka.
-To v pravo otevre dialog pomoci ktereho muze uzivatel zaktualizovat svuj ucet.
+\subsubsection{Aktualizace uctu}
+
+Prave tlacitko \texttt{Update account }otevre dialog pomoci ktereho muze
+uzivatel zaktualizovat svuj ucet.
+
+\paragraph{Zmena jmena a emailu}
 
 Nabizi se zmena uzivatelskeho jmena, emailu a i hesla.
 Samozrejme musi byt splneny stejne podminky jako pri registraci\ref{subsec:registrace}.
 
-Druhe tlacitko, ktere se nachazi vlevo slouzi k odhlaseni uzivatele.
+\paragraph{Zmena hesla}
+
+Nabizi se zmena uzivatelskeho jmena, emailu a i hesla.
+Samozrejme musi byt splneny stejne podminky jako pri registraci\ref{subsec:registrace}.
+
+\subsubsection{Odhlaseni}
+
+Po stisknuti leveho tlacitka \texttt{Logout} se uzivatel z jeho uctu odhlasi.
 
 \subsection{Tabulka obrazku}\label{subsec:tabulka-obrazku}
 Na adrese \url{https://stegoer.netlify.app/images} nalezneme tabulku, pomoci
 ktere muze uzivatel prochazet obrazky, do kterych v minulosti ulozil nejaka
 data.
-
-Na jedne strane se zobrazi maximalne 10 radku, pro zobrazeni ostatnich je treba
-pouzit navigacni tlacitka pod tabulkou.
-Kazdy radek tabulky reprezentuje jeden obrazek a lze z neho vycist jeho ID a
-datum vytvoreni.
-
-Tlacitko \texttt{view} slouzi k otevreni detailni informace o souboru a
-moznost si obrazek opet znovu stahnout (pokud tak uzivatel naucinil po
-zakodovani dat).
 
 \begin{figure}
     \centering
@@ -79,8 +85,19 @@ zakodovani dat).
     \caption{Tabulka s obrazky}\label{fig:tabulka-obrazky}
 \end{figure}
 
+\subsubsection{Strankovani}\label{subsubsec:strankovani}
+Na jedne strane se zobrazi maximalne 10 radku, pro zobrazeni ostatnich je treba
+pouzit navigacni tlacitka pod tabulkou.
+Kazdy radek tabulky reprezentuje jeden obrazek a lze z neho vycist jeho ID a
+datum vytvoreni.
+
+\subsubsection{Detail obrazku}\label{subsubsec:detail-obrazku}
+Tlacitko \texttt{view}, ktere se nachazi na kazdem radku slouzi k otevreni
+detailni informace o souboru a moznost si obrazek opet znovu stahnout
+(pokud tak uzivatel naucinil po zakodovani dat).
+
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{assets/images/image-detail}
-    \caption{Detailni zobrazeni obrazku}\label{fig:detail-obrazek}
+    \caption{Detailn obrazku}\label{fig:detail-obrazku}
 \end{figure}

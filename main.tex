@@ -23,6 +23,17 @@
 \usepackage{hyperref}
 \usepackage{expl3}
 \usepackage[backend=biber]{biblatex}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 
 \graphicspath{ {../assets} }
 
@@ -38,7 +49,6 @@
     \newpage
 
     \input{src/about.tex}
-    \input{src/installation.tex}
     \input{src/steganography.tex}
     \input{src/user.tex}
     \input{src/other.tex}
@@ -47,5 +57,6 @@
     \newpage
     \input{src/sources.tex}
 
+    \newpage
     \printbibliography[heading=bibintoc]
 \end{document}
