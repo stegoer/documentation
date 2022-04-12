@@ -5,6 +5,17 @@ Be aware that the text of the document is not written in English.
 It will be submitted to the director at my school.
 That is its only purpose.
 
+## Installation
+
+### Install instructions
+
+1. Install LaTex https://www.latex-project.org/get/
+2. Clone this repository
+
+```sh
+git clone git@github.com:stegoer/documentation.git
+```
+
 ## Development
 
 ### Build pdf document
