@@ -67,7 +67,9 @@ obrázek a zakódovat do něj informaci.
 \begin{subsubsection}{Textový editor}\label{subsubsec:textovy-editor}
 V horní části stránky se nachází textový editor.
 Do něj uživatel zadá data, která mají být skryta v obrázku.
-Editor umožňuje mnoho možností pro formátování textu.
+Editor umožňuje mnoho možností pro formátování textu a například i nahrání
+obrázku (lze zakódovat i více obrázků do jednoho obrázku).
+Z editoru dostane aplikace zpět HTML, které se pak pošle na server.
 
 \begin{figure}
     \centering
@@ -90,6 +92,9 @@ pro zakódování.
     \item Určení jaké barevné složky mají být změněny
     \item Zda-li mají být data rozprostřena po obrázku rovnoměrně
 \end{enumerate}
+
+Pokud není specifikován žádný klíč pro zašifrování, aplikace použije
+svůj globálně definovaný klíč (ten jen samozřejmě tajný).
 
 \end{subsubsection}
 
@@ -147,13 +152,19 @@ Z tohotu obrázku se aplikace pokusí zakódovanou informaci dekódovat.
 
 Po stisknutí tlačítka \texttt{Decode} proběhne kontrola vložených hodnot.
 Pokud je vše v pořádku, aplikace opět pošle požadavek s obrázkem a
-případnou konfiguraci na server.
+případnou konfigurací na server.
 
 Server následně obrázek zpracuje a pokusí se zakódovanou informaci odšifrovat.
 Pokud vše proběhne v pořádku, klient dostane zpět odpověd s odšifrovanou
 informací.
 
 Na konci stránky se pak tato informace zobrazí.
+Informaci se vloží do DOM
+\url{https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model}
+pomocí \url{https://reactjs.org/docs/dom-elements.html\#dangerouslysetinnerhtml}
+a proto zůstává stejné formátování, které bylo možné vidět při enkódování
+zprávy v textovém editoru \ref{subsubsec:textovy-editor}.
+
 Aplikace také informaci uživateli zkopíruje do schránky, aby s ní mohl dále
 pracovat.
 
