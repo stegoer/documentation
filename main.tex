@@ -1,0 +1,51 @@
+%! Author = kucera-lukas
+%! Date = 4/11/22
+
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{graphicx}{includegraphics}
+%
+
+\documentclass[11pt
+]{article}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage[a4paper, total={18cm, 25cm}]{geometry}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[parfill]{parskip}
+\usepackage{textcomp}
+\usepackage{xcolor,graphicx,grffile}
+\usepackage{hyperref}
+\usepackage{expl3}
+\usepackage[backend=biber]{biblatex}
+
+\graphicspath{ {../assets} }
+
+\addbibresource{bibliography/bibliography.bib}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\date{}
+
+\begin{document}
+    \input{src/title.tex}
+    \tableofcontents
+    \newpage
+
+    \input{src/about.tex}
+    \input{src/installation.tex}
+    \input{src/steganography.tex}
+    \input{src/user.tex}
+    \input{src/other.tex}
+    \input{src/documentation.tex}
+
+    \newpage
+    \input{src/sources.tex}
+
+    \printbibliography[heading=bibintoc]
+\end{document}
