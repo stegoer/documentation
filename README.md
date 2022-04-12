@@ -1,6 +1,4 @@
 # documentation
-<<<<<<< HEAD
-=======
 
 Documentation is written using [LaTex](https://www.latex-project.org/).
 Be aware that the text of the document is not written in English.
