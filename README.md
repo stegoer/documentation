@@ -1,5 +1,6 @@
 # documentation
 
+[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/stegoer/documentation/main.svg)](https://results.pre-commit.ci/latest/github/stegoer/documentation/main)
 
 Documentation is written using [LaTex](https://www.latex-project.org/).
